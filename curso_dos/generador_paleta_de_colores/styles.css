@@ -1,0 +1,45 @@
+body {/*cuadro*/
+    margin: 0;/*margen*/
+    font-family: 'Red Hat Display', sans-serif;/*tipo de formato*/
+    position: relative;
+    display: grid;/*caja*/
+    place-items: center;
+    min-height: 100vh;/*alto de la pantalla*/
+    font-weight: bold;/*tipo de texto*/
+    padding-top: 20px;/* espacio*/
+}
+
+#palleteContainer {/*contine los colores*/
+    width: 320px;/*ancho*/
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;/*margen*/
+    border-radius: 4px;
+    overflow: hidden;/*bordes redondeado*/
+}
+
+.palleteItem {/*paleta de cad uno*/
+    transition: background-color .5s;/*tiempo de transicion*/
+} 
+
+.palleteItem span {/*grupo de la paleta*/
+    padding: 10px;/*espacio*/
+    background-color: rgba(0, 0, 0, 0.2);/*borde*/
+    color: #fff;/*color*/
+    display: inline-block;/*elemento bloque*/
+    min-width: 80px;/*minimo del ancho*/
+}
+
+button {/*boton generar paleta*/
+    font-family: 'Red Hat Display', sans-serif;/*fuente*/
+    font-weight: bold;/*grosor o peso, tipo de letra*/
+    letter-spacing: 4px;/*espacio letra*/
+    text-transform: uppercase;/*texto mayuscula*/
+    cursor: pointer;/*cursero*/
+    width: 100%;/*ancho*/
+    border: none;/*borde*/
+    padding: 10px;/*espacio*/
+    color: #fff;/*color */
+    border-radius: 4px;/*redondeo de esquina*/
+    background: #000;/*fondo*/
+}
