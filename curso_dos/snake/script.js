@@ -1,4 +1,4 @@
-// HTML Elements
+// HTML Elementos
 const board = document.getElementById('board');
 const scoreBoard = document.getElementById('scoreBoard');
 const startButton = document.getElementById('start');
@@ -32,9 +32,6 @@ const drawSnake = () => {
 }
 
 // Rellena cada cuadrado del tablero
-// @params 
-// square: posicion del cuadrado,
-// type: tipo de cuadrado (emptySquare, snakeSquare, foodSquare)
 const drawSquare = (square, type) => {
     const [ row, column ] = square.split('');
     boardSquares[row][column] = squareTypes[type];
