@@ -36,37 +36,37 @@ button {/* botones */
     box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;/* se pone el color y las psmbra y el sentido*/
 }
 
-button:active {
+button:active {/*cambio del color cuando intractua con los botones*/
     background-color: #006f54;
 }
 
-button:focus {
+button:focus {/*es para los botones */
     outline: none;
 }
 
-.col-2 {
+.col-2 {/* se estira la columna 2*/
     grid-column: span 2;
 }
 
-.display {
+.display {/* ancho total de donde se muestran los resultados*/
     grid-column: 1 / -1;
     padding: 16px;
     display: flex;
-    margin: 10px 10px 20px;
+    margin: 10px 10px 20px;/*margen que tenga mas*/
     flex-direction: column;
-    align-items: flex-end;
-    background-color: #363636;
+    align-items: flex-end;/* a la derecha*/
+    background-color: #363636;/* color mas oscuro del cuadro*/
     border-radius: 32px;
     text-align: right;
-    justify-content: space-between;
+    justify-content: space-between;/*separar los valores*/
     word-break: break-all;
-    box-shadow: 0px 0px 0px 10px #00000033;
+    box-shadow: 0px 0px 0px 10px #00000033;/*profundidad al display*/
 }
 
-#valor-actual {
+#valor-actual {/* tamaño de los números arriba*/
     font-size: 1.5em;
 }
 
-#valor-anterior {
+#valor-anterior {/* tamaño del número de abajo*/
     font-size: 2em;
 }
