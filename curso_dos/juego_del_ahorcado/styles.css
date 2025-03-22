@@ -1,49 +1,49 @@
-.hidden {
+.hidden {/*color de la letras se han transparentes al inicio*/
     color: transparent;
 }
 
-body {
-    background-color: #4a4063;
-    color: #fff;
-    font-family: 'SF Pixelate', sans-serif;
+body {/*estilo del cuerpo*/
+    background-color: #4a4063;/*fondo*/
+    color: #fff;/*texto*/
+    font-family: 'SF Pixelate', sans-serif;/*forma pixeles*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#wordContainer {
+#wordContainer {/*palabra ahorcado pixeltamaño*/
     margin-top: 20px;
 }
 
-.letter {
-    margin: 0 7px;
-    position: relative;
+.letter {/*letra*/
+    margin: 0 7px;/*margen*/
+    position: relative;/*posicion*/
     text-align: center;
 }
 
-.letter::after{
-    content: ' ';
-    display: block;
+.letter::after{/*dibuja la lina de espcio de la letra _*/
+    content: ' ';/*espacio*/
+    display: block;/*poscion de bajo d ela letra*/
     position: absolute;
     left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    min-width: 12px;
+    width: 100%;/*ancho*/
+    height: 1px;/*alto*/
+    background-color: #fff;/*color*/
+    min-width: 12px;/*ancho minimo*/
 }
 
-#startButton {
-    margin-top: 20px;
+#startButton {/*estilo del boton start*/
+    margin-top: 20px;/*margen*/
     appearance: none;
-    font-family: 'SF Pixelate', sans-serif;
+    font-family: 'SF Pixelate', sans-serif;/*fuente tipo*/
     border: none;
-    width: 300px;
-    padding: 10px;
-    background: #d95d39;
+    width: 300px;/*ancho*/
+    padding: 10px;/*separacion*/
+    background: #d95d39;/*relleno*/
     color: #fff;
-    font-weight: 600;
+    font-weight: 600;/*fuente letra y tamaño*/
     font-size: 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    border-radius: 4px;/*brode*/
+    cursor: pointer;/*cursor mano*/
 }
