@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet"><!--link de tipo de texto-->
+    <link rel="stylesheet" href="styles.css">/*links*/
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="list roundBorder"><!-- bordes redondeados-->
+        <div class="date"><!--fecha-->
+            <div class="dateRight">
+                <div id="dateNumber"></div><!--numero-->
+                <div>
+                    <div id="dateMonth"></div><!--mes-->
+                    <div id="dateYear"></div><!--año-->
+                </div>
+            </div>
+            <div id="dateText"></div><!--nombre del dia-->
+        </div>
+        <form onsubmit="addNewTask(event)" >
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder"><!--tipo de texto, no se vea el historial y nueva tarea-->
+            <button type="submit" class="addTaskButton">+</button><!--ejecutar este evento cuando se ejecuta el boton-->
+            <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button><!--agregar las tareas y ordenar-->
+        </form>
+        <div id="tasksContainer"></div><!--contenido de las tareas-->
+    </div>
+</body>
+</html>
