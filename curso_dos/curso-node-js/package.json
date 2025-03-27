@@ -1,0 +1,33 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "El curso de Node por 0$",
+  "keywords": [
+    "curso",
+    "node",
+    "nodejs",
+    "midudev"
+  ],
+  "homepage": "https://github.com/SusanaBecerril/Servicio-Social#readme",
+  "bugs": {
+    "url": "https://github.com/SusanaBecerril/Servicio-Social/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SusanaBecerril/Servicio-Social.git"
+  },
+  "license": "ISC",
+  "author": "Susana Enrique Becerrril",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "npm": "^11.2.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
+}
